@@ -139,7 +139,7 @@
                 <a href="./src/img/2.jpg" data-lightbox="photos"><img class="img-fluid" src="./src/img/2.jpg"></a>
               </div>
             <div class="col-xs-4 item">
-              <a href="./src/img/10.jpg" data-lightbox="photos"><img class="img-fluid" src="./src/img/6.jpg"></a>
+              <a href="./src/img/6.jpg" data-lightbox="photos"><img class="img-fluid" src="./src/img/6.jpg"></a>
             </div>
             <div class="col-xs-4 item">
               <a href="./src/img/5.jpg" data-lightbox="photos"><img class="img-fluid" src="./src/img/5.jpg"></a>
@@ -172,7 +172,7 @@
 
     <div class="center">
       <h1 class="pad-60"> 오시는 길 </h1>
-      <img src="./src/img/10.jpg" class="full-page">
+      <img src="./src/img/map.png" class="full-page">
     </div>
     
     <div id="map" style="width:100%;height:350px;"></div>
@@ -184,14 +184,14 @@
 
 var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
     mapOption = { 
-        center: new kakao.maps.LatLng(37.5061585681001, 127.067096490325), // 지도의 중심좌표
+        center: new kakao.maps.LatLng(37.5061272, 126.8846341), // 지도의 중심좌표
         level: 4 // 지도의 확대 레벨
     };
 
 var map = new kakao.maps.Map(mapContainer, mapOption);
 
 // 마커가 표시될 위치입니다 
-var markerPosition  = new kakao.maps.LatLng(37.5061585681001, 127.067096490325); 
+var markerPosition  = new kakao.maps.LatLng(37.5061272, 126.8846341); 
 
 // 마커를 생성합니다
 var marker = new kakao.maps.Marker({
@@ -202,8 +202,8 @@ var marker = new kakao.maps.Marker({
 marker.setMap(map);
 
       
-var iwContent = '<div style="padding:5px;">그랜드힐 컨벤션 <br><a href="https://map.kakao.com/link/map/1948333104" style="color:blue" target="_blank">카카오맵보기</a></div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
-    iwPosition = new kakao.maps.LatLng(37.5061585681001, 127.067096490325); //인포윈도우 표시 위치입니다
+var iwContent = '<div style="padding:5px;">신도림 라마다호텔<br><a href="https://map.kakao.com/link/map/1212235250" style="color:blue" target="_blank">카카오맵보기</a></div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
+    iwPosition = new kakao.maps.LatLng(37.5061272, 126.8846341); //인포윈도우 표시 위치입니다
 
 // 인포윈도우를 생성합니다
 var infowindow = new kakao.maps.InfoWindow({
